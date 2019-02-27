@@ -3,78 +3,7 @@ Here is code snipet to render html file using ejs and send as template using nod
 Sample html file looks like 
 
  <--- html template starts here ---->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Mail</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <style>
-    table,
-    th,
-    td {
-      border: 1px solid black;
-      border-collapse: collapse;
-    }
-    .headings {
-      background-color: grey;
-    }
-    .dualButtons {
-      text-align: center;
-    }
-    .btn-success {
-      background-color: #009900;
-      border-color: #009900;
-    }
-    .btn-danger {
-      background-color: #ff0000;
-      border-color: #ff0000;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="row">
-       Organization name
-      <p>Hi ,</p>
-      <p><%= userName %> - <%= userCategory %> has raised the purchase for the <%= shipName %> with the following
-        details.</p>
-      <p> Kindly accept or reject the purchase.</p>
-      <table style="width:100%">
-        <tr class="headings">
-          <th>S.No </th>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Grade</th>
-          <th>Qty</th>
-          <th>Price</th>
-        </tr>
-        <% for(var i=0; i < data.length; i++) { %>
-        <tr>
-          <td><%= i+1 %></td>
-          <td><%= data[i].name %></td>
-          <td><%= data[i].type %></td>
-          <td><%= data[i].grade %></td>
-          <td><%= data[i].qty %></td>
-          <td><%= data[i].price %></td>
-        </tr>
-        <% } %>
-      </table>
-      <br>      <div class="dualButtons">
-        <a class="btn btn-success" href=<%= acceptUrl %>> Accept</a>
-        <a class="btn btn-danger" href=<%= rejectUrl %>>Reject</a>
-      </div>
-      <br>
-      <p>If you want to verify all the purchase, Kindly Login using the below link</p>
-      <a href="http:localhost:3000/login" class="btn btn-success">Login</a>
-    </div>
-  </div>
-</body>
-</html>
+
 
 <--- html template ends here ---->
 
