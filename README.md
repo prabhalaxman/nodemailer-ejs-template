@@ -47,7 +47,7 @@ Sample html file looks like
 
   <div class="container">
     <div class="row">
-      <h2><i class="fa fa-envelope"></i> Organization name</h2>
+       Organization name
       <p>Hi ,</p>
       <p><%= userName %> - <%= userCategory %> has raised the purchase for the <%= shipName %> with the following
         details.</p>
