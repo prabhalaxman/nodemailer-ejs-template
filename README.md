@@ -1,13 +1,8 @@
 # nodemailer-ejs-template
 Here is code snipet to render html file using ejs and send as template using nodemailer
-Sample html file looks like 
+refer the sample.html file 
 
- <--- html template starts here ---->
-
-
-<--- html template ends here ---->
-
-And sample code snipet to send mail using nodemailer
+Sample code snipet to send mail using nodemailer
 
 
 try {
